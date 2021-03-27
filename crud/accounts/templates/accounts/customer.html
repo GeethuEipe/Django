@@ -1,0 +1,27 @@
+{% extends 'accounts/main.html' %}
+{% block content %}
+<table class="table table-boardered text-center mt-5">
+    <thead class="table-dark">
+        <th>Name</th>
+        <th>Phone no</th>
+        <th>Email</th>
+        <th>Date_created</th>
+
+  </thead>
+  
+     
+      <tr>
+          <td>{{customer.name}}</td>
+          <td>{{customer.phone}}</td>
+          <td>{{customer.email}}</td>
+          <td>{{customer.date_create}}</td>
+
+      </tr>
+      
+  </tbody>
+
+
+  </body>
+</html>
+
+{% endblock %}

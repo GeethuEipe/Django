@@ -1,0 +1,54 @@
+{% extends 'accounts/main.html' %}
+{% block content %}
+
+{% include 'accounts/status.html' %}
+<html>
+  <head>     
+  </head>
+  <style>
+  </style>  
+  <body>
+      <!--table1-->
+      <table class="table table-boardered text-center mt-5">
+      <thead class="table-dark">
+          <th>Customer</th>
+          <th>Phoneno</th>
+          <th>Action</th>
+    </thead>
+    
+        {% for i in customer %}
+        <tr>
+            <td>{{i.name}}</td>
+            <td>{{i.phone}}</td>
+            <td><a href="{% url 'customer' i.id %}">View</a></td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+<!--table2-->
+<!--<table class="table table-boardered text-center mt-5">
+    <thead class="table-dark">
+        <th>Name</th>
+        <th>Price</th>
+        <th>Description</th>
+        <th>Date</th>
+        <th>Category</th>
+  </thead>
+  
+      {% for i in pro2 %}
+      <tr>
+          <td>{{i.name}}</td>
+          <td>{{i.price}}</td>
+          <td>{{i.description}}</td>
+          <td>{{i.date_create}}</td>
+          <td>{{i.category}}</td>
+
+      </tr>
+      {% endfor %}-->
+  </tbody>
+
+
+  </body>
+</html>
+
+{% endblock %}

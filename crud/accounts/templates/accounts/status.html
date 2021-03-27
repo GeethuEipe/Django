@@ -1,0 +1,36 @@
+{% block content %}
+<div class="row">
+<div class="col-sm-4">
+<div class="card" style="width: 18rem;">
+    <div class="card-header text-center">
+      <h3 class="card-text">Total Order</h3>
+    </div>
+    <div class="card-body">
+        {{total_order}}
+    </div>
+  </div>
+  </div>
+
+  <div class="col-sm-4">
+    <div class="card" style="width: 18rem;">
+        <div class="card-header text-center ">
+          <h3 class="card-text">Order Delivered</h3>
+        </div>
+        <div class="card-body">
+          {{delivered}}
+        </div>
+      </div>
+      </div>
+
+      <div class="col-sm-4">
+        <div class="card" style="width: 18rem;">
+            <div class="card-header text-center ">
+              <h3 class="card-text">Order Pending</h3>
+            </div>
+            <div class="card-body">
+              {{pending}}
+                </div>
+          </div>
+          </div>
+        </div>
+{% endblock %}

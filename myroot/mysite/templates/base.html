@@ -1,0 +1,54 @@
+{% load static %}
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>
+      {% block title %}
+      {{ page_title|default:"Untitled Page" }}
+      {% endblock title %}
+    </title>
+    <link href="{% static 'main.css' %}" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div id="wrapper">
+    <header id="header">
+      <div id="logo"><img src="{% static 'logo.png' %}" alt="" width="200px" /></div>
+      <div id="top_menu">Home | Course | Events |News|Blog|About Us| <!--<a href="/contact">--->Contact Us<button style="background-color: green;width:80px;height:50px;">Apply Now</button></a></div>
+      <div id="topbanner"><img src="{% static 'orisys.jpg' %}" alt="" width="1300px" /></div>
+    </header>
+    
+    <h6> HR Heads from corporates say that students have the necessary theoretical skills, but when it comes to 
+      the practical part, they lack big time. Lately, we have observed that in our country ‘college life’ has become synonymous with ‘fun’ and ‘fests’. Ask any student and they’ll tell 
+      you how strongly they believe that college is meant for having the time of your life with friends.
+      With such a mentality being accepted and promoted, there is no doubt that employability will be decreasing among the Indian workforce. 
+      We need universities to introduce the concept of compulsory internships and practical skill learning.</h6>
+      <h1>OUR SERVICES</h1>
+    <img src="{% static '4.jpg' %}" alt="" width="500px" height="400px" />
+    <img src="{% static '5.png' %}" alt="" width="350px" height="450px" />
+    <img src="{% static '6.png' %}" alt="" width="400px" height="400px" />
+    <!-----
+    <aside id="rightsidebar">
+      <nav id="nav">
+
+      <ul>
+        <li>Menu 1<a href="/add_venue"></a></li>
+        <li>Menu 2</li>
+        <li>Menu 3</li>
+      </ul>
+      </nav>
+    </aside>
+    <section id="main">
+      {% block content %}
+      <p>Placeholder text in base template. Replace with page content.</p>
+      {% endblock content %}
+    </section>
+    ---->
+    <footer id="footer">Copyright &copy;
+      <script type="text/JavaScript">
+      document.write(new Date().getFullYear());
+      </script> MyClub
+    </footer>
+    </div>
+  </body>
+</html>

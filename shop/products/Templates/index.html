@@ -1,0 +1,27 @@
+{% extends 'theme.html' %}
+{% block content %}
+<ul>
+  {% for pro3 in pro2 %}
+  
+<div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="{{pro3.image}}" alt="Card image cap">
+    <div class="card-body">
+     <h5 class="card-tittle">{{pro3.name}}</h5>
+     price = {{pro3.price}}</br>
+     stoke = {{pro3.stoke}}</br>
+      <a href="#" class="btn btn-primary">Buy</a>
+    </div>
+  </div>
+  {% endfor %}
+</ul>
+{% endblock %}
+<h2>products</h2>
+<!--<ul>
+    {% for pro3 in pro2 %}
+    
+  <li>{{pro3.name}}</li>
+    <li>{{pro3.price}}</li>
+    <li>{{pro3.image}}</li>
+    
+    {% endfor %}
+</ul>-->

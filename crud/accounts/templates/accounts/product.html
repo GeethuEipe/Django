@@ -1,0 +1,28 @@
+{% extends 'accounts/main.html' %}
+{% block content %}
+<table class="table table-boardered text-center mt-5">
+    <thead class="table-dark">
+        <th>Name</th>
+        <th>Price</th>
+        <th>Description</th>
+        <th>Date_created</th>
+        <th>Category</th>
+  </thead>
+  
+      {% for i in product %}
+      <tr>
+          <td>{{i.name}}</td>
+          <td>{{i.price}}</td>
+          <td>{{i.description}}</td>
+          <td>{{i.date_create}}</td>
+          <td>{{i.category}}</td>
+
+      </tr>
+      {% endfor %}
+  </tbody>
+
+
+  </body>
+</html>
+
+{% endblock %}
